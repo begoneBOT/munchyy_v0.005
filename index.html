@@ -1,1 +1,95 @@
-<b> portfolio coming soon(more on IG)!!!</b> product of munchAI, Munchyy Org™. 
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div class="header">
+      <h1>Munchyy Org.™</h1>
+      <div class="navbar">
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#shop">Shop</a>
+      </div>
+    </div>
+    <div class="timer">
+      <p id="timer"></p>
+    </div>
+    <div class="content">
+      <!-- Your portfolio content, such as photo galleries, about section, etc. goes here -->
+      <div id="about">
+        <!-- About section content goes here -->
+      </div>
+      <div id="projects">
+        <!-- Projects section content goes here -->
+      </div>
+      <div id="shop">
+        <!-- Shop section content goes here -->
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <style>
+body {
+  background-color: #000000;
+  color: #fff;
+  font-family: sans-serif;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #000;
+}
+
+.navbar a {
+  color: #fff;
+  margin-right: 20px;
+  text-decoration: none;
+}
+
+.timer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 50px;
+  width: 100px;
+  background-color: #111;
+  color: #fff;
+  border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: timer-glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes timer-glow {
+  from {
+    box-shadow: 0 0 10px #fff;
+  }
+  to {
+    box-shadow: 0 0 20px #fff;
+  }
+}
+
+.content {
+  padding: 20px;
+}
+
+    </style>
+    <script>
+      const startTime = Date.now();
+
+setInterval(function() {
+  const elapsedTime = (Date.now() - startTime) / 1000;
+  const minutes = Math.floor(elapsedTime / 60);
+  const seconds = Math.floor(elapsedTime % 60);
+
+  document.getElementById("timer").innerHTML = `${minutes}:${seconds}`;
+}, 1000);
+
+    </script>
+  </body>
+</html>
