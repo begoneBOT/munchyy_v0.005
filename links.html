@@ -1,69 +1,84 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <style>
-        body {
-	margin: 0;
-	padding: 0;
-	font-family: Arial, sans-serif;
-}
-
-header {
-	background-color: #333;
-	color: #fff;
-	padding: 20px;
-	text-align: center;
-}
-
-h1 {
-	margin: 0;
-	font-size: 36px;
-}
-
-main {
-	padding: 20px;
-}
-
-section {
-	margin-bottom: 40px;
-}
-
-h2 {
-	font-size: 24px;
-	margin-bottom: 20px;
-}
-
-ul {
-	list-style: none;
-	padding: 0;
-	margin: 0;
-}
-
-li {
-	margin-bottom: 10px;
-}
-
-a {
-	color: #333;
-	text-decoration: none;
-}
-
-a:hover {
-	color: #f00;
-}
-
-footer {
-	background-color: #f5f5f5;
-	color: #333;
-	padding: 20px;
-	text-align: center;
-}
-
-    </style>
-  
 	<title>My Linktree</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			font-family: Arial, sans-serif;
+			background-color: #000000;
+			color: #ffffff;
+		}
+
+		header {
+			background-color: #000000;
+			color: #ffffff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		h1 {
+			margin: 0;
+			font-size: 36px;
+		}
+
+		main {
+			padding: 20px;
+		}
+
+		section {
+			margin-bottom: 40px;
+		}
+
+		h2 {
+			font-size: 24px;
+			margin-bottom: 20px;
+			color: #ffffff;
+		}
+
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: 0;
+		}
+
+		li {
+			margin-bottom: 10px;
+		}
+
+		a {
+			color: #ffffff;
+			text-decoration: none;
+		}
+
+		a:hover {
+			color: #f00;
+		}
+
+		footer {
+			background-color: #000000;
+			color: #ffffff;
+			padding: 20px;
+			text-align: center;
+		}
+
+		#toggle-button {
+			margin: 20px auto;
+			display: block;
+			background-color: #ffffff;
+			color: #000000;
+			padding: 10px 20px;
+			border: none;
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
+		.hidden {
+			display: none;
+		}
+	</style>
 </head>
 <body>
 	<header>
@@ -74,9 +89,16 @@ footer {
 		<section>
 			<h2>Social Media</h2>
 			<ul>
-				<li><a href="#">Twitter</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Facebook</a></li>
+                <li><a href="#">Kick</a></li>
+                <li><a href="#">Twitch</a></li>
+                <li><a href="#">Reddit</a></li>
+                <li><a href="#">Lemon8</a></li>
+                <li><a href="#">TikTok</a></li>
+                <li><a href="#">Twitter</a></li>
+                <li><a href="#">YouTube</a></li>
+                <li><a href="#">Pintrest</a></li>
+                <li><a href="#">Instagram</a></li>
+				<li><a href="https://github.com/begoneBOT/munchyyy_v0">GitHub</a></li>
 			</ul>
 		</section>
 
@@ -86,15 +108,26 @@ footer {
 				<li><a href="#">Project 1</a></li>
 				<li><a href="#">Project 2</a></li>
 				<li><a href="#">Project 3</a></li>
-				<li><a href="https://github.com/begoneBOT/munchyyy_v0">GitHub</a></li>
+				<li><a href="#">Project 3</a></li>
 			</ul>
 		</section>
+
+		<button id="toggle-button">Toggle Links</button>
 	</main>
 
 	<footer>
 		<p>&copy; 2023 My Linktree</p>
 	</footer>
 
-	<script type="text/javascript" src="script.js"></script>
+	<script>
+		const button = document.getElementById('toggle-button');
+		const sections = document.querySelectorAll('section');
+
+		button.addEventListener('click', () => {
+		    sections.forEach(section => {
+		        section.classList.toggle('hidden');
+		    });
+		});
+	</script>
 </body>
 </html>
