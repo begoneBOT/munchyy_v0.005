@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+      body {
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #fff;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 1rem;
+  display: block;
+}
+
+section {
+  padding: 1rem;
+}
+
+.project {
+  background-color: #333;
+  margin-bottom: 1rem;
+  padding: 1rem;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem;
+}
+body {
+  font-family: 'Inconsolata', monospace, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #fff;
+}
+body {
+  font-family: 'Inconsolata', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
+  color: #fff;
+}
+
+    </style>
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+        <!-- your other head content -->
+      </head>
+      
+    <Script>
+        // Show/hide IT projects when "IT Projects" navigation link is clicked
+const itProjectsBtn = document.querySelector("#it-projects-btn");
+const itProjectsContainer = document.querySelector("#it-projects");
+
+itProjectsBtn.addEventListener("click", function() {
+  itProjectsContainer.classList.toggle("hidden");
+});
+
+// Show/hide Architecture projects when "Architecture Projects" navigation link is clicked
+const architectureProjectsBtn = document.querySelector("#architecture-projects-btn");
+const architectureProjectsContainer = document.querySelector("#architecture-projects");
+
+architectureProjectsBtn.addEventListener("click", function() {
+  architectureProjectsContainer.classList.toggle("hidden");
+});
+
+// Show/hide Product projects when "Product Projects" navigation link is clicked
+const productProjectsBtn = document.querySelector("#product-projects-btn");
+const productProjectsContainer = document.querySelector("#product-projects");
+
+productProjectsBtn.addEventListener("click", function() {
+  productProjectsContainer.classList.toggle("hidden");
+});
+
+// Show/hide Photograph projects when "Photograph Projects" navigation link is clicked
+const photographProjectsBtn = document.querySelector("#photograph-projects-btn");
+const photographProjectsContainer = document.querySelector("#photograph-projects");
+
+photographProjectsBtn.addEventListener("click", function() {
+  photographProjectsContainer.classList.toggle("hidden");
+});
+
+    </Script>
+  <meta charset="UTF-8">
+  <title>munchAI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>munchAI</h1>
+    <nav>
+      <ul>
+        <li><a href="#it-projects">IT Projects</a></li>
+        <li><a href="#architecture-projects">Architecture Projects</a></li>
+        <li><a href="#product-projects">Product Projects</a></li>
+        <li><a href="#photography-projects">Photography Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <section id="it-projects">
+      <h2>IT Projects</h2>
+
+      </div>
+      <!-- Add more project sections here -->
+    </section>
+    
+    <section id="architecture-projects">
+      <h2>Architecture Projects</h2>
+      <!-- Add project sections here -->
+    </section>
+    
+    <section id="product-projects">
+      <h2>Product Projects</h2>
+      <!-- Add project sections here -->
+    </section>
+    
+    <section id="photography-projects">
+      <h2>Photography Projects</h2>
+      <!-- Add project sections here -->
+    </section>
+  </main>
+  
+  <footer>
+    <p>&copy; 2023 munchAI</p>
+  </footer>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
+
+
+
+
+
+
+
